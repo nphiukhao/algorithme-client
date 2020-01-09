@@ -58,7 +58,6 @@ class LearningRoute extends Component {
           wordIncorrectCount: result.wordIncorrectCount,
           prevWord: result.nextWord,
         })
-        console.log(result)
       })
       
   }
@@ -104,10 +103,10 @@ class LearningRoute extends Component {
     const { nextWord, wordCorrectCount, wordIncorrectCount, totalScore } = this.state
     return (
       <section className='learn-main container' aria-live="polite">
-        <h2 className="cypress" style={{ display: 'none' }}>Translate the word:</h2>
+        <p className="learn-main-total">Your total score is: {totalScore}</p>
+        <h2 className="cypress" style={{ display: 'none' }}>Translate the word:</h2> 
         <h3 className="learn-main-h2">What is the name of this algorithm?</h3>
         <span style={{ display: 'none' }}>{nextWord}</span>
-        <p className="learn-main-total">Your total score is: {totalScore}</p>
         <div className='test-main'>
           <img src={images[`${this.findImage(nextWord)}`]} alt='algorithm question' />
           <span className="score">You have answered this word correctly {wordCorrectCount} times.</span>
@@ -115,7 +114,7 @@ class LearningRoute extends Component {
         </div>
         <form className="answer-form" onSubmit={this.handleAnswer}>
           <label htmlFor="learn-guess-input" className="guess-label" style={{ display: 'none' }}>What's the translation for this word?</label>
-          <input id="learn-guess-input" type="text" autofocus="true" onChange={this.updateAnswer} required></input>
+          <input id="learn-guess-input" type="text" autoFocus={true} onChange={this.updateAnswer} required></input>
           <button type="submit">Submit your answer</button>
         </form>
       </section>
