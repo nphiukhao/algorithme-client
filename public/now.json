@@ -1,7 +1,7 @@
 {
     "version": 2,
-    "name": "AlgorithMe",
-    "alias": "AlgorithMe",
+    "name": "Algorith-Me",
+    "alias": "Algorith-Me",
     "routes": [
       {
         "src": "^/static/(.*)",

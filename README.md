@@ -4,7 +4,7 @@ Created by: Scott Schroeder and Chitchanok Nancy Phiukhao
 ## About
 AlgorithMe is an application to help users learn common sort, search, and traversal algorithms. This client is designed to work with the AlgorithMe server found here: 
 - https://github.com/nphiukhao/algorithme-server.git
-- Live: https://algorithme.now.sh/
+- Live: 'https://algorith-me.now.sh'
 
 ## Tech Stacks 
 
